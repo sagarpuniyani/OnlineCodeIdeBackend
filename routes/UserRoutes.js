@@ -18,5 +18,3 @@ UserRoutes.put('/change-password' , usercontroller.changepassword);
 
 // Delete operation 
 UserRoutes.delete('/delete-account');
-
- 
