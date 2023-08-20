@@ -52,7 +52,7 @@ export const usercontroller = {
 
         // checking the truthy of the doc and the doc's id 
         if(doc && doc._id){
-            response.json({message : 'register done'});
+            response.json({message : 'registeration Complete '});
         }
         else {
             response.json({message : 'Registration Failed '});
