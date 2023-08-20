@@ -5,6 +5,9 @@ import {IdeRoutes} from './routes/IdeRoutes.js';
 // to up the server 
 const app = express();
 
+// Fetching all the data  (and next to the middle ware )
+app.use(express.json())
+
 // telling the routes the application 
 app.use('/' , UserRoutes);
 app.use('/' , IdeRoutes);

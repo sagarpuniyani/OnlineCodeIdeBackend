@@ -1,7 +1,19 @@
 export const usercontroller = {
 
     login( request , response ){
-        response.json({message : 'login'})
+        const userInfo  = request.body;
+        
+        if(userInfo.username == userInfo.password){
+            console.log("username = " , userInfo.username);
+            response.json({message : 'welcome ' + userInfo.username })
+        }
+        else{
+            response.json({message : 'Not valid '});
+        }
+
+
+
+        console.log("reguest body is " , body);
     },
     register( request , response){
         response.json({message : 'register'})
