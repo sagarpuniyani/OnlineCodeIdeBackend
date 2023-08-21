@@ -28,6 +28,6 @@ const server = app.listen(1234 , (err)=>{
         console.log("server Crash " , err);
     }
     else{
-        console.log("server up and running " , server.address().port)
+        console.log("server up and running " , server.address())
     }
 } )
