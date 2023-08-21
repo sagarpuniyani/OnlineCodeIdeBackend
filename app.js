@@ -2,6 +2,7 @@ import express from 'express';
 import { UserRoutes } from './routes/userRoutes.js';
 import {IdeRoutes} from './routes/IdeRoutes.js';
 import cors from 'cors';
+import { questionsRoutes } from './routes/Question.js';
 
 // to up the server 
 const app = express();
@@ -16,6 +17,7 @@ app.use(express.json())
 // telling the routes the application 
 app.use('/' , UserRoutes);
 app.use('/' , IdeRoutes);
+app.use('/' , questionsRoutes);
 
 // Last Middle Ware (404)
 app.use((req , res , next ) =>{
